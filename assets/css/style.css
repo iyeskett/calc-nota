@@ -15,6 +15,15 @@ body{
     background-color: rgba(0, 255, 255, 0.468);
 }
 
+button{
+    height: 50px;
+    margin: 10px 0 10px 0;
+}
+
+input{
+    height: 50px;
+}
+
 .notas{
     display: flex;
     flex-direction: column;
@@ -22,16 +31,13 @@ body{
 }
 
 .txt{
-    
     margin: 2px;
 }
 
 #resultado{
     resize: none;
-    margin-top: 5px;
 }
 
 #resultadoExame{
     resize: none;
-    margin-top: 5px;
 }
