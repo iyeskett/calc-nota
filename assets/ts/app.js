@@ -24,7 +24,7 @@ function notaMD(numero1, numero2) {
     }
     else {
         let notaMininaMF = 9.5 - resultado;
-        boxResultado.innerHTML = String(`Nota: ${resultado.toFixed(3)} \nResultado: ${exame} \nNota mínima MF: ${notaMininaMF}`);
+        boxResultado.innerHTML = String(`Nota: ${resultado.toFixed(3)} \nResultado: ${exame} \nNota mínima Exame: ${notaMininaMF}`);
         input1Exame.value = String(resultado.toFixed(3));
     }
 }
