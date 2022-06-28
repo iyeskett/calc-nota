@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 255, 255, 0.468);
+}
+
+.notas{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.txt{
+    
+    margin: 2px;
+}
+
+#resultado{
+    resize: none;
+    margin-top: 5px;
+}
+
+#resultadoExame{
+    resize: none;
+    margin-top: 5px;
+}
