@@ -11,7 +11,7 @@ let aprovado = 'Aprovado';
 let exame = 'Exame'
 let reprovado = 'Reprovado';
 
-function notaMD(numero1: number, numero2: number) {
+function notaMD(numero1: number, numero2: number) : void {
     let soma = ((numero1 * 9) + (1 * numero2)) / 10;
     let resultado = arredondaNotaMD(soma);
     if (resultado >= 6) {
@@ -27,9 +27,10 @@ function notaMD(numero1: number, numero2: number) {
         boxResultado.innerHTML = String(`Nota: ${resultado.toFixed(3)} \nResultado: ${exame} \nNota mínima Exame: ${notaMininaMF}`);
         input1Exame.value = String(resultado.toFixed(3));
     }
+    
 }
 
-function notaMF(numero1: number, numero2: number) {
+function notaMF(numero1: number, numero2: number) : void {
     let soma = (numero1 + numero2) / 2;
     let resultadoFinal = arredondaNotaMF(soma);
     if (resultadoFinal >= 5) {
@@ -69,7 +70,7 @@ function arredondaNotaMF(nota: number) {
 if (button) {
     button.addEventListener('click', () => {
         if (input1 && input2) {
-            console.log(notaMD(Number(input1.value), Number(input2.value)));
+            notaMD(Number(input1.value), Number(input2.value));
         }
     })
 }
@@ -77,7 +78,7 @@ if (button) {
 if (buttonExame) {
     buttonExame.addEventListener('click', () => {
         if (input1Exame && input2Exame) {
-            console.log(notaMF(Number(input1Exame.value), Number(input2Exame.value)));
+            notaMF(Number(input1Exame.value), Number(input2Exame.value));
         }
     })
 }

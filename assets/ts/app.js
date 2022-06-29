@@ -61,14 +61,14 @@ function arredondaNotaMF(nota) {
 if (button) {
     button.addEventListener('click', () => {
         if (input1 && input2) {
-            console.log(notaMD(Number(input1.value), Number(input2.value)));
+            notaMD(Number(input1.value), Number(input2.value));
         }
     });
 }
 if (buttonExame) {
     buttonExame.addEventListener('click', () => {
         if (input1Exame && input2Exame) {
-            console.log(notaMF(Number(input1Exame.value), Number(input2Exame.value)));
+            notaMF(Number(input1Exame.value), Number(input2Exame.value));
         }
     });
 }
